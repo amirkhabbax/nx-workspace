@@ -16,7 +16,10 @@
     "baseUrl": ".",
     "paths": {
       "@angular-demo/Auth": ["packages/Auth/src/index.ts"],
+      "@angular-demo/Components": ["packages/shared/Components/src/index.ts"],
+      "@angular-demo/DTOs": ["packages/shared/DTOs/src/index.ts"],
       "@angular-demo/FormGenerator": ["packages/FormGenerator/src/index.ts"],
+      "@angular-demo/Utilities": ["packages/shared/Utilities/src/index.ts"],
       "@angular-demo/data-access": ["packages/shared/data-access/src/index.ts"],
       "@angular-demo/shared": ["packages/shared/src/index.ts"],
       "@angular-demo/ui": ["packages/ui/src/index.ts"]

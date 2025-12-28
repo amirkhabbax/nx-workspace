@@ -1,26 +1,26 @@
 {
-  "name": "mainapp",
+  "name": "BenefactorstApp",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/mainapp/src",
+  "sourceRoot": "apps/BenefactorstApp/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular/build:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/mainapp",
-        "browser": "apps/mainapp/src/main.ts",
+        "outputPath": "dist/apps/BenefactorstApp",
+        "browser": "apps/BenefactorstApp/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/mainapp/tsconfig.app.json",
+        "tsConfig": "apps/BenefactorstApp/tsconfig.app.json",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/mainapp/public"
+            "input": "apps/BenefactorstApp/public"
           }
         ],
-        "styles": ["apps/mainapp/src/styles.css"]
+        "styles": ["apps/BenefactorstApp/src/styles.css"]
       },
       "configurations": {
         "production": {
@@ -51,10 +51,10 @@
       "executor": "@angular/build:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "mainapp:build:production"
+          "buildTarget": "BenefactorstApp:build:production"
         },
         "development": {
-          "buildTarget": "mainapp:build:development"
+          "buildTarget": "BenefactorstApp:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -62,7 +62,7 @@
     "extract-i18n": {
       "executor": "@angular/build:extract-i18n",
       "options": {
-        "buildTarget": "mainapp:build"
+        "buildTarget": "BenefactorstApp:build"
       }
     },
     "lint": {
@@ -72,15 +72,15 @@
       "executor": "@nx/vite:test",
       "outputs": ["{options.reportsDirectory}"],
       "options": {
-        "reportsDirectory": "../../coverage/apps/mainapp"
+        "reportsDirectory": "../../coverage/apps/BenefactorstApp"
       }
     },
     "serve-static": {
       "continuous": true,
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "mainapp:build",
-        "staticFilePath": "dist/apps/mainapp/browser",
+        "buildTarget": "BenefactorstApp:build",
+        "staticFilePath": "dist/apps/BenefactorstApp/browser",
         "spa": true
       }
     }

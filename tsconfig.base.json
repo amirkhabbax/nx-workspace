@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-demo/Auth": ["packages/Auth/src/index.ts"],
+      "@angular-demo/FormGenerator": ["packages/FormGenerator/src/index.ts"],
+      "@angular-demo/data-access": ["packages/shared/data-access/src/index.ts"],
+      "@angular-demo/shared": ["packages/shared/src/index.ts"],
+      "@angular-demo/ui": ["packages/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
